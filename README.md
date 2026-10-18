@@ -1,6 +1,6 @@
 # 🌟 Tradução PT-BR - Pokémon Brilliant Diamond (PC / Switch)
 
-[![GitHub Release](https://img.shields.io/badge/Release-v1.1-blue.svg)](../../releases)
+[![GitHub Release](https://img.shields.io/badge/Release-v1.2-blue.svg)](../../releases)
 [![Language](https://img.shields.io/badge/Idioma-Português%20(Brasil)-green.svg)](#)
 [![Platform](https://img.shields.io/badge/Plataforma-PC%20%7C%20Switch-red.svg)](#)
 
@@ -11,7 +11,7 @@ Patch de tradução, localização e revisão completa para **Português do Bras
 ## 📌 Sumário
 - [Destaques da Tradução](#-destaques-da-tradução)
 - [Download](#-download)
-- [Instalação](#-como-instalar)
+- [Como Instalar](#-como-instalar)
 - [Versão PC](#versão-pc)
 - [Versão Nintendo Switch / Emulador](#versão-nintendo-switch--emulador-yuzu--ryujinx)
 - [Conteúdo Detalhado](#-conteúdo-detalhado)
@@ -22,13 +22,13 @@ Patch de tradução, localização e revisão completa para **Português do Bras
 
 ## ✨ Destaques da Tradução
 
-* 📖 **Pokédex Completa:** Todas as entradas da Pokédex traduzidas, incluindo espécies/categorias, proporção de gênero e conversão de medidas para o sistema métrico (metros e quilos).
-* ⚔️ **Golpes (826 Moves):** Todos os movimentos de batalha traduzidos com a terminologia oficial brasileira consagrada da franquia.
+* 📖 **Pokédex Completa:** Todas as entradas traduzidas, com espécies/categorias, proporção de gênero e conversão métrica (metros e quilos).
+* ⚔️ **Golpes (826 Moves):** Movimentos de batalha traduzidos com a terminologia oficial brasileira.
 * 🛡️ **Habilidades (268 Abilities):** Descrições e efeitos 100% em português claro e conciso.
 * 🎒 **Itens (1.823 Itens):** Itens de cura, Poké Bolas, Itens Chave, TMs, itens de batalha e pedras evolutivas traduzidos.
 * ⛏️ **Grand Underground:** Diálogos com mineradores, escavações, pedestais, itens e bases secretas revisados.
 * 💬 **Interface e Diálogos:** Menus de batalha, caixas de diálogo, opções de sistema e nomes de locais revisados.
-* 🔧 **Correções Técnicas v1.1:** Resolução de colisões de texto em caixas de diálogo horizontais de PC (ex: *"vai enviar"*, *"enviou Starly"*).
+* 🔧 **Correções Técnicas v1.2:** Auto-wrap inteligente para evitar estouro de texto, correção de troca de página (<PAGE>) e limpeza de tags fantasmas e artigos em inglês ("the").
 
 ---
 
@@ -42,7 +42,7 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 ## 🚀 Como Instalar
 
 ### Versão PC
-1. Baixe e extraia o arquivo da tradução.
+1. Baixe e extraia o arquivo `.zip` da tradução.
 2. Copie a pasta **`Dpr_Data`** que está dentro do pacote.
 3. Cole na pasta principal onde o seu jogo está instalado (por exemplo: `...\Pokemon Brilliant Diamond - PC Version\`).
 4. Quando o Windows perguntar, confirme para **Substituir os arquivos no destino**.
@@ -50,7 +50,7 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 
 ### Versão Nintendo Switch / Emulador (Ryujinx / Yuzu / Suyu)
 1. Extraia os arquivos do pacote.
-2. No seu emulador, clique com o botão direito sobre o *Pokémon Brilliant Diamond* e selecione **Open Mod Directory** (ou *Abrir Diretório de Mods*).
+2. No seu emulador, clique com o botão direito sobre o jogo e selecione **Open Mod Directory**.
 3. Crie uma pasta com o nome `Traducao_PTBR`.
 4. Dentro dela, coloque a estrutura `romfs/Data/StreamingAssets/AssetAssistant/Message/` com os arquivos substituídos.
 5. Inicie o jogo.
@@ -73,10 +73,14 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 
 ## 📜 Histórico de Versões (Changelog)
 
+### v1.2.0
+- **Auto-wrap de diálogos:** Sistema automático para que frases longas nunca estourem a lateral da tela.
+- **Correção de troca de página:** Preservação da flag de diálogo para que o comando `<PAGE>` funcione com o botão (A) sem travar ou cortar.
+- **Correção de Coleta de Itens:** Removido o "the" em inglês e corrigida a frase duplicada "da damochila".
+- **Espaçamento Universal:** Prevenção de palavras grudadas antes e depois de quebras de linha.
+
 ### v1.1.0
-- **Correção de espaçamento em batalha:** Corrigidas palavras coladas em caixas de diálogo contínuas (ex: "vai enviar", "desafiado por", "enviou").
-- **Ajuste de quebra de linha de troca:** Reestruturação da mensagem `BTL_STRID_STD_IrekaeConfirm` para manter locuções verbais unidas.
-- **Recompilação dos pacotes:** Atualizados `english` e `common_msbt`.
+- Ajustes de mensagens de batalha e combate.
 
 ### v1.0.0
 - Lançamento inicial com tradução completa da Pokédex, menus, golpes, itens, habilidades e diálogos.
