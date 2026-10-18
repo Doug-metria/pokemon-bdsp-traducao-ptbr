@@ -78,7 +78,11 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 - **Correção de troca de página:** Preservação da flag de diálogo para que o comando `<PAGE>` funcione com o botão (A) sem travar ou cortar.
 - **Correção de Coleta de Itens:** Removido o "the" em inglês e corrigida a frase duplicada "da damochila".
 - **Espaçamento Universal:** Prevenção de palavras grudadas antes e depois de quebras de linha.
-
+- 🛠️ **Remoção Global de Scroll Bugado (`<EV4>`):** Substituição de comandos legados do Nintendo DS que deixavam palavras isoladas no topo da caixa de texto ("fosse", "de", "para") por quebras de página limpas e suaves (`<PAGE>`).
+- 💬 **Correção de Quebras Antecipadas:** Removidas quebras forçadas manuais no meio de orações, aproveitando a largura correta da tela no PC.
+- 📺 **Correção da TV e Abertura:** Linha do programa de TV corrigida para exibir o texto completo sem truncar na lateral da tela.
+- 🎒 **Coleta de Itens:** Artigos em inglês ("the") e repetições ("da damochila") eliminados.
+- 🔤 **Espaçamento Universal:** Eliminadas palavras coladas antes e depois de quebras e tags.
 ### v1.1.0
 - Ajustes de mensagens de batalha e combate.
 
