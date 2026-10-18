@@ -12,8 +12,8 @@ Patch de tradução, localização e revisão completa para **Português do Bras
 - [Destaques da Tradução](#-destaques-da-tradução)
 - [Download](#-download)
 - [Instalação](#-como-instalar)
-  - [Versão PC](#versão-pc)
-  - [Versão Nintendo Switch / Emulador](#versão-nintendo-switch--emulador-yuzu--ryujinx)
+- [Versão PC](#versão-pc)
+- [Versão Nintendo Switch / Emulador](#versão-nintendo-switch--emulador-yuzu--ryujinx)
 - [Conteúdo Detalhado](#-conteúdo-detalhado)
 - [Agradecimentos e Créditos](#-créditos)
 
