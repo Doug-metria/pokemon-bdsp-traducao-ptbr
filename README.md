@@ -48,12 +48,13 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 3. Quando o Windows perguntar, confirme para **Substituir os arquivos no destino**.
 4. Inicie o jogo pelo executável padrão ou Launcher e divirta-se!
 
-### Versão Nintendo Switch / Emulador (Ryujinx / Yuzu / Suyu)
-1. Extraia os arquivos do pacote `.zip`.
-2. No seu emulador, clique com o botão direito sobre o *Pokémon Brilliant Diamond* e selecione **Open Mod Directory** (ou *Abrir Diretório de Mods*).
-3. Crie uma pasta com o nome `Traducao_PTBR`.
-4. Dentro dela, coloque a estrutura `romfs/Data/StreamingAssets/AssetAssistant/Message/` com os arquivos `english` e `common_msbt` substituídos.
-5. Inicie o jogo.
+## ❓ Perguntas Frequentes (FAQ)
+#### Essa tradução afeta meu save atual?
+> **Não.** A tradução apenas substitui pacotes de recursos de texto (`AssetAssistant\Message`). Seu savegame, seus Pokémon capturados e seu progresso continuam 100% intactos.
+#### Funciona no Nintendo Switch ou em emuladores?
+> Este pacote foi estruturado e compilado especificamente para a versão **PC Port (Unity x86_64)**. Para emuladores (Ryujinx/Yuzu), a estrutura de mods do RomFS pode requerer o empacotamento compatível com o console.
+#### O jogo precisa estar em português na seleção de idiomas?
+> Como este mod substitui o canal de idioma principal do port (`english`), você pode deixar o jogo em **Inglês** no menu de opções, e todos os textos carregarão automaticamente em **Português do Brasil**.
 
 ---
 
