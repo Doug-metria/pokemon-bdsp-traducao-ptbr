@@ -74,6 +74,44 @@ Baixe sempre a versão mais recente na aba [**Releases**](../../releases/latest)
 
 ## 📜 Histórico de Versões (Changelog)
 
+## [v1.6.0] - Atualização Cumulativa de Correções, Diálogos e Localização
+### 🛑 Correções de Travamento (Softlocks e Controles)
+- **Correção Geral das Placas de Sinnoh (155 placas):**
+  - Resolvido o congelamento do jogo e a falta de resposta do controle ao ler placas e marcos geográficos pelo mapa (ex: Vila Floaroma, Vila Twinleaf, Rotas e Cavernas).
+  - Restaurada a estrutura técnica original de 2 linhas (`patternID = 7` no título e `patternID = 0, eventID = 7` no subtítulo), garantindo que a seta de diálogo apareça e o controle feche a mensagem normalmente.
+---
+### 💬 Correções de Quebras de Texto, Linhas e Caixa de Diálogo
+- **Fim das Linhas Infinitas Ultrapassando a Tela (Overflow em Linha Única):**
+  - Identificada e corrigida a causa raiz pela qual o motor Unity do jogo ignorava quebras de linha (`<BR>`) e novas páginas (`<PAGE>`) em frases com marcadores/tags: todos os eventos de quebra agora recebem rigorosamente `patternID = 7`. Textos longos não mais vazam para fora da tela em uma única linha.
+- **Interação e Colheita de Frutas (Berries):**
+  - Corrigida a colheita de frutas que antes transbordava a tela sem quebrar a linha: agora estruturada em 2 linhas limpas com avanço suave para a página seguinte ao pressionar o botão A.
+  - Eliminado o vazamento de gramática em inglês que exibia *"Tem are 2 Fruta Chestos ! Você gostaria de colher them ?"*. A frase foi reconstruída em português limpo: *"Há {TAG:1} {TAG:2}! Gostaria de colher?"*.
+- **Eliminação de Palavras Órfãs (Linhas com 1 palavra só):**
+  - Varredura geral e redistribuição de quebras de linha em diálogos de NPCs e eventos de história para impedir que palavras soltas fiquem isoladas na linha inferior quando havia espaço suficiente na linha anterior.
+- **Ajuste de Escala no Mapa-Múndi (Town Map):**
+  - Redução das fontes dos nomes de cidades e descrições no Mapa-múndi (escalas ajustadas para 30 e 27) e quebras de texto refeitas, eliminando o texto que ultrapassava as bordas e barras do mapa.
+- **Preservação de Telas de Animação e Batalha:**
+  - Preservação integral dos tokens internos nas telas de subida de nível (*Level Up*), evolução (*Shinka Demo*) e lembrador de movimentos (*Move Relearner*).
+---
+### 🌐 Localização e Eliminação de Textos Restantes em Inglês
+- **Mochila e Bolsos (Bag Pockets):**
+  - Termos `[ Berries ]` e `Bolso de Berries` localizados oficialmente para **`Frutas`** e **`Bolso de Frutas`**.
+  - Padronização de todos os bolsos: `Medicina`, `Pokébolas`, `Itens de Batalha`, `Frutas`, `Outros Itens`, `TMs`, `Tesouros` e `Itens-chave`.
+  - Revisão e tradução de todas as descrições de frutas (*Berry* -> *Fruta*).
+- **Sala União e Sala Global (Local & Global Union Rooms):**
+  - Tradução integral de todas as 45 linhas das recepcionistas, confirmações de entrada/saída, cópia de Decoração de Cápsulas de Pokébolas e mistura de registros.
+- **Comunicação Y-Comm e Batalhas em Rede:**
+  - Tradução completa dos menus e notificações de conexão online, Códigos de Elo, busca de parceiros de troca, modo avião e lista de bloqueio de jogadores.
+  - Tradução das telas de regras de batalhas online, seleção de equipes e checagem de itens repetidos.
+- **Eletrodomésticos do Catálogo Rotom:**
+  - Tradução de todas as mensagens de interação com os aparelhos no Edifício da Equipe Galáctica (forno micro-ondas, geladeira, máquina de lavar, ventilador e cortador de grama).
+- **Movimentos, Itens Especiais e Marcos:**
+  - Golpe *After You* localizado para a nomenclatura oficial **Depois de Você**.
+  - Golpe *Light That Burns the Sky* localizado para **Luz que Queima o Céu**.
+  - Notificação do item de som ajustada para: *"Você obteve os Sons do DS!"*.
+  - Placa da Cidade de Veilstone traduzida: *"Cidade de Veilstone - Esculpida na Rocha"*.
+  - Tradução das telas de entrada de texto virtual (teclado), avisos de salvamento e mensagens de erro de rede.
+  - 
 ### v1.5.0
 - **Eficácia de Golpes em Batalha:** Traduzidos os indicadores na seleção de golpes (*Super eficaz*, *Pouco eficaz*, *Eficaz*, *Sem efeito*).
 - **Correção Profunda de Tokenização:** Fim definitivo de palavras coladas (*"aprendero"*, *"algunssegundos"*, *"Rosnado!E"*, *"Multiplicar.Um"*).
